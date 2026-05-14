@@ -1,0 +1,52 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-black: #181818;
+  --vt-c-white: #fff;
+  --vt-c-orange: #D77338;
+  --vt-opacity-text: #000000;
+  --color-background: #FFFFFF;
+}
+
+@font-face {
+  font-family: "Jeko";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Jeko"), url("@/assets/fonts/jeko-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat"), url("@/assets/fonts/Montserrat-Italic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "MontserratBold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("MontserratBold"), url("@/assets/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+header {
+    font-family: "Jeko";
+    font-size: 20px;
+}
+
+body {
+  background: var(--color-background);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+

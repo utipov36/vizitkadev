@@ -1,0 +1,49 @@
+@import './base.css';
+
+html, body, #app {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 20px;
+}
+
+body {
+  display: block;
+  background: #fff;
+}
+
+#app {
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media (max-width: 768px) {
+  #container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  #container {
+    padding: 0 12px;
+  }
+}
+
+/* Chrome, Safari, Edge, новые браузеры */
+::selection {
+    background-color: var( --vt-c-orange);
+    color: white;
+}
+
+/* Firefox */
+::-moz-selection {
+    background-color: var(--vt-c-orange);
+    color: white;
+}
